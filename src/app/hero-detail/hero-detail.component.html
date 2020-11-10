@@ -1,1 +1,6 @@
-<p>hero-detail works!</p>
+<div>
+    <p>hero-detail </p>
+<p *ngIf='hero'>{{hero.id}}</p>
+<a routerLink='/heroes-two'>To heroes-two</a>
+<button (click)='eventChildren()'>btn</button>
+</div>

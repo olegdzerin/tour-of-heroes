@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+
+import {Hero} from '../hero'
 
 @Component({
   selector: 'app-hero-detail',
@@ -6,8 +8,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./hero-detail.component.css']
 })
 export class HeroDetailComponent implements OnInit {
+  @Input()  hero;
+  @Output()  ev = new EventEmitter();
+  constructor() { };
+ 
 
-  constructor() { }
+  eventChildren = function(){
+    this.ev.emit()
+  }
 
   ngOnInit(): void {
   }
