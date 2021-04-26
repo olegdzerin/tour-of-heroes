@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+span {
+    background-color:darkslategrey;
+    font-size: large;
+    color:darkseagreen;
+}
+.detail {
+    background-color: darkturquoise;
+    margin-left: 8px;
+    width: 100px;
+    height: 80px;
+    margin-bottom: 8px;
+}
+.detailMax {
+    background-color: darkturquoise;
+    margin-left: 8px;
+    width: 200px;
+    height: 180px;
+    margin-bottom: 8px;
+}
+.selected {
+    background-color: cornsilk;
+}

@@ -15,7 +15,7 @@ export class HeroesTwoChildrenComponent implements OnInit {
     this.router = router;
     // this.relativeTo = relativeTo
    }
-  useNavExrFn(){
+  goToHome(){
       this.router.navigate(['/heroes']);
     }
   ngOnInit(): void {

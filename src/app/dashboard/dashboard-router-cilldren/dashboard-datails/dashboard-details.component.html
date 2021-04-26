@@ -1,0 +1,9 @@
+<p>dashboard-details works!</p>
+<div><a routerLink="/heroes">Go to heroes</a></div>
+<div class="detail" *ngFor="let hero of heroes">
+<app-dashboard-details-child [hero]="hero"></app-dashboard-details-child>
+
+</div>
+
+
+

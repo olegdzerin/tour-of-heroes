@@ -1,0 +1,20 @@
+<p>dashboard-single-hero works!</p>
+{{hero.name}}
+
+<div class="detailMax">
+    <label for="fist">First input</label>
+    <input type="text" id="fist" [(ngModel)]="hero.name">
+    <label for="second">Second input</label>
+    <input type="text" id="second" (click)="showByClick()"
+      (input)="showByInput($event.target.value)"
+      [value]="hero.name">
+      <label for="four">Four input</label>
+      <input type="text" id="four" 
+        (input)="hero.name = $event.target.value"
+        [value]="hero.name">
+</div>
+<br>
+<div>
+    <button (click)="aplay()">Aplay chose</button>
+</div>
+<div><a routerLink="/dashboard">Back to dashboard</a></div>

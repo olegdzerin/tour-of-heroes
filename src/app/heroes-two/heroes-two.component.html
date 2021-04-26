@@ -1,4 +1,19 @@
 <p>heroes-two works!</p>
 <a routerLink='../heroes'>To heroes</a>
 <a routerLink='children'>To heroes-two-children</a>
+<div>
+    <button (click)="goToHome()">
+        Go to home
+    </button>
+</div>
+<div class="detailMax" >fontSizePx:
+    <div>{{fontSizePx}}</div>
+    <div><button (click)="changeFontSizePx()">ChangefontSize</button></div>
+</div>
+<h2>Paremt weight:{{weight}}</h2>
+<h2>Paremt weight:{{weightFromParent}}</h2>
+
+<!-- <app-heroes-two-child [(size)]="fontSizePx" -->
+    <app-heroes-two-child [size]="fontSizePx" (sizeChange)="fontSizePx=$event"
+[weight]=weight (weightChange)="reweightParent($event)"></app-heroes-two-child>
 <router-outlet></router-outlet>
